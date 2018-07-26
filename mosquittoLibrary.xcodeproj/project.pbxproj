@@ -1,0 +1,798 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA0841331AB66AEF00C7B883 /* MyMQTTDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0841321AB66AEF00C7B883 /* MyMQTTDelegate.m */; };
+		AA1879441A917AA8005A6255 /* mosquittoLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA1879431A917AA8005A6255 /* mosquittoLibrary.h */; };
+		AA1879461A917AA8005A6255 /* mosquittoLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1879451A917AA8005A6255 /* mosquittoLibrary.m */; };
+		AA18794C1A917AA8005A6255 /* libmosquittoLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA1879401A917AA8005A6255 /* libmosquittoLibrary.a */; };
+		AAADF137210878BA003D4B3B /* packet_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = AAADF0FD210878B5003D4B3B /* packet_mosq.c */; };
+		AAADF138210878BA003D4B3B /* time_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = AAADF0FE210878B5003D4B3B /* time_mosq.c */; };
+		AAADF139210878BA003D4B3B /* util_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = AAADF100210878B5003D4B3B /* util_mosq.c */; };
+		AAADF13A210878BA003D4B3B /* handle_ping.c in Sources */ = {isa = PBXBuildFile; fileRef = AAADF103210878B5003D4B3B /* handle_ping.c */; };
+		AAADF13B210878BA003D4B3B /* handle_suback.c in Sources */ = {isa = PBXBuildFile; fileRef = AAADF105210878B5003D4B3B /* handle_suback.c */; };
+		AAADF13C210878BA003D4B3B /* callbacks.c in Sources */ = {isa = PBXBuildFile; fileRef = AAADF107210878B5003D4B3B /* callbacks.c */; };
+		AAADF13D210878BA003D4B3B /* send_subscribe.c in Sources */ = {isa = PBXBuildFile; fileRef = AAADF108210878B5003D4B3B /* send_subscribe.c */; };
+		AAADF13E210878BA003D4B3B /* memory_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = AAADF109210878B6003D4B3B /* memory_mosq.c */; };
+		AAADF13F210878BA003D4B3B /* send_connect.c in Sources */ = {isa = PBXBuildFile; fileRef = AAADF10A210878B6003D4B3B /* send_connect.c */; };
+		AAADF140210878BA003D4B3B /* handle_connack.c in Sources */ = {isa = PBXBuildFile; fileRef = AAADF10B210878B6003D4B3B /* handle_connack.c */; };
+		AAADF141210878BA003D4B3B /* helpers.c in Sources */ = {isa = PBXBuildFile; fileRef = AAADF10F210878B6003D4B3B /* helpers.c */; };
+		AAADF142210878BA003D4B3B /* send_unsubscribe.c in Sources */ = {isa = PBXBuildFile; fileRef = AAADF110210878B6003D4B3B /* send_unsubscribe.c */; };
+		AAADF143210878BA003D4B3B /* tls_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = AAADF111210878B6003D4B3B /* tls_mosq.c */; };
+		AAADF144210878BA003D4B3B /* handle_unsuback.c in Sources */ = {isa = PBXBuildFile; fileRef = AAADF112210878B6003D4B3B /* handle_unsuback.c */; };
+		AAADF145210878BA003D4B3B /* send_disconnect.c in Sources */ = {isa = PBXBuildFile; fileRef = AAADF114210878B6003D4B3B /* send_disconnect.c */; };
+		AAADF146210878BA003D4B3B /* srv_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = AAADF115210878B7003D4B3B /* srv_mosq.c */; };
+		AAADF147210878BA003D4B3B /* loop.c in Sources */ = {isa = PBXBuildFile; fileRef = AAADF116210878B7003D4B3B /* loop.c */; };
+		AAADF148210878BA003D4B3B /* connect.c in Sources */ = {isa = PBXBuildFile; fileRef = AAADF117210878B7003D4B3B /* connect.c */; };
+		AAADF149210878BA003D4B3B /* utf8_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = AAADF11B210878B7003D4B3B /* utf8_mosq.c */; };
+		AAADF14A210878BA003D4B3B /* socks_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = AAADF11C210878B7003D4B3B /* socks_mosq.c */; };
+		AAADF14B210878BA003D4B3B /* actions.c in Sources */ = {isa = PBXBuildFile; fileRef = AAADF122210878B8003D4B3B /* actions.c */; };
+		AAADF14C210878BA003D4B3B /* mosquitto.c in Sources */ = {isa = PBXBuildFile; fileRef = AAADF123210878B8003D4B3B /* mosquitto.c */; };
+		AAADF14D210878BA003D4B3B /* send_publish.c in Sources */ = {isa = PBXBuildFile; fileRef = AAADF124210878B8003D4B3B /* send_publish.c */; };
+		AAADF14E210878BA003D4B3B /* read_handle.c in Sources */ = {isa = PBXBuildFile; fileRef = AAADF125210878B8003D4B3B /* read_handle.c */; };
+		AAADF14F210878BA003D4B3B /* net_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = AAADF126210878B8003D4B3B /* net_mosq.c */; };
+		AAADF150210878BA003D4B3B /* handle_pubrec.c in Sources */ = {isa = PBXBuildFile; fileRef = AAADF128210878B8003D4B3B /* handle_pubrec.c */; };
+		AAADF151210878BA003D4B3B /* messages_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = AAADF129210878B9003D4B3B /* messages_mosq.c */; };
+		AAADF152210878BA003D4B3B /* handle_pubrel.c in Sources */ = {isa = PBXBuildFile; fileRef = AAADF12B210878B9003D4B3B /* handle_pubrel.c */; };
+		AAADF153210878BA003D4B3B /* options.c in Sources */ = {isa = PBXBuildFile; fileRef = AAADF12F210878B9003D4B3B /* options.c */; };
+		AAADF154210878BA003D4B3B /* handle_pubackcomp.c in Sources */ = {isa = PBXBuildFile; fileRef = AAADF130210878B9003D4B3B /* handle_pubackcomp.c */; };
+		AAADF155210878BA003D4B3B /* thread_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = AAADF131210878B9003D4B3B /* thread_mosq.c */; };
+		AAADF156210878BA003D4B3B /* logging_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = AAADF133210878BA003D4B3B /* logging_mosq.c */; };
+		AAADF157210878BA003D4B3B /* handle_publish.c in Sources */ = {isa = PBXBuildFile; fileRef = AAADF134210878BA003D4B3B /* handle_publish.c */; };
+		AAADF158210878BA003D4B3B /* will_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = AAADF135210878BA003D4B3B /* will_mosq.c */; };
+		AAADF159210878BA003D4B3B /* send_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = AAADF136210878BA003D4B3B /* send_mosq.c */; };
+		AAF057541A918B750064CBEE /* MqttClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF0574D1A918B750064CBEE /* MqttClient.m */; };
+		AAF057551A918B750064CBEE /* MqttMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF057501A918B750064CBEE /* MqttMessage.m */; };
+		AAF057561A918B750064CBEE /* ServerBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF057521A918B750064CBEE /* ServerBrowser.m */; };
+		AAFEF8851AB9112600E67622 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAFEF8831AB9112600E67622 /* libcrypto.a */; };
+		AAFEF8861AB9112600E67622 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAFEF8841AB9112600E67622 /* libssl.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA18794D1A917AA8005A6255 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA1879381A917AA8005A6255 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA18793F1A917AA8005A6255;
+			remoteInfo = mosquittoLibrary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AA18793E1A917AA8005A6255 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				AA1879441A917AA8005A6255 /* mosquittoLibrary.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AA0841311AB66AEF00C7B883 /* MyMQTTDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMQTTDelegate.h; sourceTree = "<group>"; };
+		AA0841321AB66AEF00C7B883 /* MyMQTTDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMQTTDelegate.m; sourceTree = "<group>"; };
+		AA1879401A917AA8005A6255 /* libmosquittoLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmosquittoLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA1879431A917AA8005A6255 /* mosquittoLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mosquittoLibrary.h; sourceTree = "<group>"; };
+		AA1879451A917AA8005A6255 /* mosquittoLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mosquittoLibrary.m; sourceTree = "<group>"; };
+		AA18794B1A917AA8005A6255 /* mosquittoLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mosquittoLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA1879511A917AA8005A6255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA18795A1A917AEB005A6255 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		AA1879601A917AEB005A6255 /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = aes.h; path = openssl/aes.h; sourceTree = "<group>"; };
+		AA1879611A917AEB005A6255 /* asn1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = asn1.h; path = openssl/asn1.h; sourceTree = "<group>"; };
+		AA1879621A917AEB005A6255 /* asn1_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = asn1_mac.h; path = openssl/asn1_mac.h; sourceTree = "<group>"; };
+		AA1879631A917AEB005A6255 /* asn1t.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = asn1t.h; path = openssl/asn1t.h; sourceTree = "<group>"; };
+		AA1879641A917AEB005A6255 /* bio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bio.h; path = openssl/bio.h; sourceTree = "<group>"; };
+		AA1879651A917AEB005A6255 /* blowfish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = blowfish.h; path = openssl/blowfish.h; sourceTree = "<group>"; };
+		AA1879661A917AEB005A6255 /* bn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bn.h; path = openssl/bn.h; sourceTree = "<group>"; };
+		AA1879671A917AEB005A6255 /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = buffer.h; path = openssl/buffer.h; sourceTree = "<group>"; };
+		AA1879681A917AEB005A6255 /* camellia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = camellia.h; path = openssl/camellia.h; sourceTree = "<group>"; };
+		AA1879691A917AEB005A6255 /* cast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cast.h; path = openssl/cast.h; sourceTree = "<group>"; };
+		AA18796A1A917AEB005A6255 /* cmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cmac.h; path = openssl/cmac.h; sourceTree = "<group>"; };
+		AA18796B1A917AEB005A6255 /* cms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cms.h; path = openssl/cms.h; sourceTree = "<group>"; };
+		AA18796C1A917AEB005A6255 /* comp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = comp.h; path = openssl/comp.h; sourceTree = "<group>"; };
+		AA18796D1A917AEB005A6255 /* conf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = conf.h; path = openssl/conf.h; sourceTree = "<group>"; };
+		AA18796E1A917AEB005A6255 /* conf_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = conf_api.h; path = openssl/conf_api.h; sourceTree = "<group>"; };
+		AA18796F1A917AEB005A6255 /* crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = crypto.h; path = openssl/crypto.h; sourceTree = "<group>"; };
+		AA1879701A917AEB005A6255 /* des.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = des.h; path = openssl/des.h; sourceTree = "<group>"; };
+		AA1879711A917AEB005A6255 /* des_old.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = des_old.h; path = openssl/des_old.h; sourceTree = "<group>"; };
+		AA1879721A917AEB005A6255 /* dh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dh.h; path = openssl/dh.h; sourceTree = "<group>"; };
+		AA1879731A917AEB005A6255 /* dsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dsa.h; path = openssl/dsa.h; sourceTree = "<group>"; };
+		AA1879741A917AEB005A6255 /* dso.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dso.h; path = openssl/dso.h; sourceTree = "<group>"; };
+		AA1879751A917AEB005A6255 /* dtls1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dtls1.h; path = openssl/dtls1.h; sourceTree = "<group>"; };
+		AA1879761A917AEB005A6255 /* e_os2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = e_os2.h; path = openssl/e_os2.h; sourceTree = "<group>"; };
+		AA1879771A917AEB005A6255 /* ebcdic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ebcdic.h; path = openssl/ebcdic.h; sourceTree = "<group>"; };
+		AA1879781A917AEB005A6255 /* ec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ec.h; path = openssl/ec.h; sourceTree = "<group>"; };
+		AA1879791A917AEB005A6255 /* ecdh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ecdh.h; path = openssl/ecdh.h; sourceTree = "<group>"; };
+		AA18797A1A917AEB005A6255 /* ecdsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ecdsa.h; path = openssl/ecdsa.h; sourceTree = "<group>"; };
+		AA18797B1A917AEB005A6255 /* engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = engine.h; path = openssl/engine.h; sourceTree = "<group>"; };
+		AA18797C1A917AEB005A6255 /* err.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = err.h; path = openssl/err.h; sourceTree = "<group>"; };
+		AA18797D1A917AEB005A6255 /* evp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = evp.h; path = openssl/evp.h; sourceTree = "<group>"; };
+		AA18797E1A917AEB005A6255 /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hmac.h; path = openssl/hmac.h; sourceTree = "<group>"; };
+		AA18797F1A917AEB005A6255 /* idea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = idea.h; path = openssl/idea.h; sourceTree = "<group>"; };
+		AA1879801A917AEB005A6255 /* krb5_asn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = krb5_asn.h; path = openssl/krb5_asn.h; sourceTree = "<group>"; };
+		AA1879811A917AEB005A6255 /* kssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kssl.h; path = openssl/kssl.h; sourceTree = "<group>"; };
+		AA1879821A917AEB005A6255 /* lhash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lhash.h; path = openssl/lhash.h; sourceTree = "<group>"; };
+		AA1879831A917AEB005A6255 /* md4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = md4.h; path = openssl/md4.h; sourceTree = "<group>"; };
+		AA1879841A917AEB005A6255 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = md5.h; path = openssl/md5.h; sourceTree = "<group>"; };
+		AA1879851A917AEB005A6255 /* mdc2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mdc2.h; path = openssl/mdc2.h; sourceTree = "<group>"; };
+		AA1879861A917AEB005A6255 /* modes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = modes.h; path = openssl/modes.h; sourceTree = "<group>"; };
+		AA1879871A917AEB005A6255 /* obj_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = obj_mac.h; path = openssl/obj_mac.h; sourceTree = "<group>"; };
+		AA1879881A917AEB005A6255 /* objects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = objects.h; path = openssl/objects.h; sourceTree = "<group>"; };
+		AA1879891A917AEB005A6255 /* ocsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ocsp.h; path = openssl/ocsp.h; sourceTree = "<group>"; };
+		AA18798A1A917AEB005A6255 /* opensslconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = opensslconf.h; path = openssl/opensslconf.h; sourceTree = "<group>"; };
+		AA18798B1A917AEB005A6255 /* opensslv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = opensslv.h; path = openssl/opensslv.h; sourceTree = "<group>"; };
+		AA18798C1A917AEB005A6255 /* ossl_typ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ossl_typ.h; path = openssl/ossl_typ.h; sourceTree = "<group>"; };
+		AA18798D1A917AEB005A6255 /* pem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pem.h; path = openssl/pem.h; sourceTree = "<group>"; };
+		AA18798E1A917AEB005A6255 /* pem2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pem2.h; path = openssl/pem2.h; sourceTree = "<group>"; };
+		AA18798F1A917AEB005A6255 /* pkcs12.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pkcs12.h; path = openssl/pkcs12.h; sourceTree = "<group>"; };
+		AA1879901A917AEB005A6255 /* pkcs7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pkcs7.h; path = openssl/pkcs7.h; sourceTree = "<group>"; };
+		AA1879911A917AEB005A6255 /* pqueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pqueue.h; path = openssl/pqueue.h; sourceTree = "<group>"; };
+		AA1879921A917AEB005A6255 /* rand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rand.h; path = openssl/rand.h; sourceTree = "<group>"; };
+		AA1879931A917AEB005A6255 /* rc2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rc2.h; path = openssl/rc2.h; sourceTree = "<group>"; };
+		AA1879941A917AEB005A6255 /* rc4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rc4.h; path = openssl/rc4.h; sourceTree = "<group>"; };
+		AA1879951A917AEB005A6255 /* ripemd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ripemd.h; path = openssl/ripemd.h; sourceTree = "<group>"; };
+		AA1879961A917AEB005A6255 /* rsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rsa.h; path = openssl/rsa.h; sourceTree = "<group>"; };
+		AA1879971A917AEB005A6255 /* safestack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = safestack.h; path = openssl/safestack.h; sourceTree = "<group>"; };
+		AA1879981A917AEB005A6255 /* seed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = seed.h; path = openssl/seed.h; sourceTree = "<group>"; };
+		AA1879991A917AEB005A6255 /* sha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sha.h; path = openssl/sha.h; sourceTree = "<group>"; };
+		AA18799A1A917AEB005A6255 /* srp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = srp.h; path = openssl/srp.h; sourceTree = "<group>"; };
+		AA18799B1A917AEB005A6255 /* srtp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = srtp.h; path = openssl/srtp.h; sourceTree = "<group>"; };
+		AA18799C1A917AEB005A6255 /* ssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ssl.h; path = openssl/ssl.h; sourceTree = "<group>"; };
+		AA18799D1A917AEB005A6255 /* ssl2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ssl2.h; path = openssl/ssl2.h; sourceTree = "<group>"; };
+		AA18799E1A917AEB005A6255 /* ssl23.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ssl23.h; path = openssl/ssl23.h; sourceTree = "<group>"; };
+		AA18799F1A917AEB005A6255 /* ssl3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ssl3.h; path = openssl/ssl3.h; sourceTree = "<group>"; };
+		AA1879A01A917AEB005A6255 /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stack.h; path = openssl/stack.h; sourceTree = "<group>"; };
+		AA1879A11A917AEB005A6255 /* symhacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = symhacks.h; path = openssl/symhacks.h; sourceTree = "<group>"; };
+		AA1879A21A917AEB005A6255 /* tls1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tls1.h; path = openssl/tls1.h; sourceTree = "<group>"; };
+		AA1879A31A917AEB005A6255 /* ts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ts.h; path = openssl/ts.h; sourceTree = "<group>"; };
+		AA1879A41A917AEB005A6255 /* txt_db.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = txt_db.h; path = openssl/txt_db.h; sourceTree = "<group>"; };
+		AA1879A51A917AEB005A6255 /* ui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ui.h; path = openssl/ui.h; sourceTree = "<group>"; };
+		AA1879A61A917AEB005A6255 /* ui_compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ui_compat.h; path = openssl/ui_compat.h; sourceTree = "<group>"; };
+		AA1879A71A917AEB005A6255 /* whrlpool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = whrlpool.h; path = openssl/whrlpool.h; sourceTree = "<group>"; };
+		AA1879A81A917AEB005A6255 /* x509.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = x509.h; path = openssl/x509.h; sourceTree = "<group>"; };
+		AA1879A91A917AEB005A6255 /* x509_vfy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = x509_vfy.h; path = openssl/x509_vfy.h; sourceTree = "<group>"; };
+		AA1879AA1A917AEB005A6255 /* x509v3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = x509v3.h; path = openssl/x509v3.h; sourceTree = "<group>"; };
+		AAADF0FB210878B5003D4B3B /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = mqttLib/config.h; sourceTree = "<group>"; };
+		AAADF0FC210878B5003D4B3B /* ipad.crt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ipad.crt; path = mqttLib/ipad.crt; sourceTree = "<group>"; };
+		AAADF0FD210878B5003D4B3B /* packet_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = packet_mosq.c; path = mqttLib/packet_mosq.c; sourceTree = "<group>"; };
+		AAADF0FE210878B5003D4B3B /* time_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = time_mosq.c; path = mqttLib/time_mosq.c; sourceTree = "<group>"; };
+		AAADF0FF210878B5003D4B3B /* tls_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tls_mosq.h; path = mqttLib/tls_mosq.h; sourceTree = "<group>"; };
+		AAADF100210878B5003D4B3B /* util_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = util_mosq.c; path = mqttLib/util_mosq.c; sourceTree = "<group>"; };
+		AAADF101210878B5003D4B3B /* dummypthread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dummypthread.h; path = mqttLib/dummypthread.h; sourceTree = "<group>"; };
+		AAADF102210878B5003D4B3B /* memory_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = memory_mosq.h; path = mqttLib/memory_mosq.h; sourceTree = "<group>"; };
+		AAADF103210878B5003D4B3B /* handle_ping.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = handle_ping.c; path = mqttLib/handle_ping.c; sourceTree = "<group>"; };
+		AAADF104210878B5003D4B3B /* remote.key */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = remote.key; path = mqttLib/remote.key; sourceTree = "<group>"; };
+		AAADF105210878B5003D4B3B /* handle_suback.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = handle_suback.c; path = mqttLib/handle_suback.c; sourceTree = "<group>"; };
+		AAADF106210878B5003D4B3B /* remote.crt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = remote.crt; path = mqttLib/remote.crt; sourceTree = "<group>"; };
+		AAADF107210878B5003D4B3B /* callbacks.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = callbacks.c; path = mqttLib/callbacks.c; sourceTree = "<group>"; };
+		AAADF108210878B5003D4B3B /* send_subscribe.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = send_subscribe.c; path = mqttLib/send_subscribe.c; sourceTree = "<group>"; };
+		AAADF109210878B6003D4B3B /* memory_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = memory_mosq.c; path = mqttLib/memory_mosq.c; sourceTree = "<group>"; };
+		AAADF10A210878B6003D4B3B /* send_connect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = send_connect.c; path = mqttLib/send_connect.c; sourceTree = "<group>"; };
+		AAADF10B210878B6003D4B3B /* handle_connack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = handle_connack.c; path = mqttLib/handle_connack.c; sourceTree = "<group>"; };
+		AAADF10C210878B6003D4B3B /* mqtt3_protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mqtt3_protocol.h; path = mqttLib/mqtt3_protocol.h; sourceTree = "<group>"; };
+		AAADF10D210878B6003D4B3B /* mosquitto_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mosquitto_internal.h; path = mqttLib/mosquitto_internal.h; sourceTree = "<group>"; };
+		AAADF10E210878B6003D4B3B /* read_handle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = read_handle.h; path = mqttLib/read_handle.h; sourceTree = "<group>"; };
+		AAADF10F210878B6003D4B3B /* helpers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = helpers.c; path = mqttLib/helpers.c; sourceTree = "<group>"; };
+		AAADF110210878B6003D4B3B /* send_unsubscribe.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = send_unsubscribe.c; path = mqttLib/send_unsubscribe.c; sourceTree = "<group>"; };
+		AAADF111210878B6003D4B3B /* tls_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tls_mosq.c; path = mqttLib/tls_mosq.c; sourceTree = "<group>"; };
+		AAADF112210878B6003D4B3B /* handle_unsuback.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = handle_unsuback.c; path = mqttLib/handle_unsuback.c; sourceTree = "<group>"; };
+		AAADF113210878B6003D4B3B /* logging_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = logging_mosq.h; path = mqttLib/logging_mosq.h; sourceTree = "<group>"; };
+		AAADF114210878B6003D4B3B /* send_disconnect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = send_disconnect.c; path = mqttLib/send_disconnect.c; sourceTree = "<group>"; };
+		AAADF115210878B7003D4B3B /* srv_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = srv_mosq.c; path = mqttLib/srv_mosq.c; sourceTree = "<group>"; };
+		AAADF116210878B7003D4B3B /* loop.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = loop.c; path = mqttLib/loop.c; sourceTree = "<group>"; };
+		AAADF117210878B7003D4B3B /* connect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = connect.c; path = mqttLib/connect.c; sourceTree = "<group>"; };
+		AAADF118210878B7003D4B3B /* send_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = send_mosq.h; path = mqttLib/send_mosq.h; sourceTree = "<group>"; };
+		AAADF119210878B7003D4B3B /* ca.crt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ca.crt; path = mqttLib/ca.crt; sourceTree = "<group>"; };
+		AAADF11A210878B7003D4B3B /* packet_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = packet_mosq.h; path = mqttLib/packet_mosq.h; sourceTree = "<group>"; };
+		AAADF11B210878B7003D4B3B /* utf8_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = utf8_mosq.c; path = mqttLib/utf8_mosq.c; sourceTree = "<group>"; };
+		AAADF11C210878B7003D4B3B /* socks_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = socks_mosq.c; path = mqttLib/socks_mosq.c; sourceTree = "<group>"; };
+		AAADF11D210878B7003D4B3B /* iphone.key */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = iphone.key; path = mqttLib/iphone.key; sourceTree = "<group>"; };
+		AAADF11E210878B8003D4B3B /* util_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = util_mosq.h; path = mqttLib/util_mosq.h; sourceTree = "<group>"; };
+		AAADF11F210878B8003D4B3B /* net_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = net_mosq.h; path = mqttLib/net_mosq.h; sourceTree = "<group>"; };
+		AAADF120210878B8003D4B3B /* will_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = will_mosq.h; path = mqttLib/will_mosq.h; sourceTree = "<group>"; };
+		AAADF121210878B8003D4B3B /* iphone.crt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = iphone.crt; path = mqttLib/iphone.crt; sourceTree = "<group>"; };
+		AAADF122210878B8003D4B3B /* actions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = actions.c; path = mqttLib/actions.c; sourceTree = "<group>"; };
+		AAADF123210878B8003D4B3B /* mosquitto.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mosquitto.c; path = mqttLib/mosquitto.c; sourceTree = "<group>"; };
+		AAADF124210878B8003D4B3B /* send_publish.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = send_publish.c; path = mqttLib/send_publish.c; sourceTree = "<group>"; };
+		AAADF125210878B8003D4B3B /* read_handle.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = read_handle.c; path = mqttLib/read_handle.c; sourceTree = "<group>"; };
+		AAADF126210878B8003D4B3B /* net_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = net_mosq.c; path = mqttLib/net_mosq.c; sourceTree = "<group>"; };
+		AAADF127210878B8003D4B3B /* socks_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = socks_mosq.h; path = mqttLib/socks_mosq.h; sourceTree = "<group>"; };
+		AAADF128210878B8003D4B3B /* handle_pubrec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = handle_pubrec.c; path = mqttLib/handle_pubrec.c; sourceTree = "<group>"; };
+		AAADF129210878B9003D4B3B /* messages_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = messages_mosq.c; path = mqttLib/messages_mosq.c; sourceTree = "<group>"; };
+		AAADF12A210878B9003D4B3B /* mosquitto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mosquitto.h; path = mqttLib/mosquitto.h; sourceTree = "<group>"; };
+		AAADF12B210878B9003D4B3B /* handle_pubrel.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = handle_pubrel.c; path = mqttLib/handle_pubrel.c; sourceTree = "<group>"; };
+		AAADF12C210878B9003D4B3B /* ipad.key */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ipad.key; path = mqttLib/ipad.key; sourceTree = "<group>"; };
+		AAADF12D210878B9003D4B3B /* messages_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = messages_mosq.h; path = mqttLib/messages_mosq.h; sourceTree = "<group>"; };
+		AAADF12E210878B9003D4B3B /* linker.version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = linker.version; path = mqttLib/linker.version; sourceTree = "<group>"; };
+		AAADF12F210878B9003D4B3B /* options.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = options.c; path = mqttLib/options.c; sourceTree = "<group>"; };
+		AAADF130210878B9003D4B3B /* handle_pubackcomp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = handle_pubackcomp.c; path = mqttLib/handle_pubackcomp.c; sourceTree = "<group>"; };
+		AAADF131210878B9003D4B3B /* thread_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = thread_mosq.c; path = mqttLib/thread_mosq.c; sourceTree = "<group>"; };
+		AAADF132210878B9003D4B3B /* time_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = time_mosq.h; path = mqttLib/time_mosq.h; sourceTree = "<group>"; };
+		AAADF133210878BA003D4B3B /* logging_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = logging_mosq.c; path = mqttLib/logging_mosq.c; sourceTree = "<group>"; };
+		AAADF134210878BA003D4B3B /* handle_publish.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = handle_publish.c; path = mqttLib/handle_publish.c; sourceTree = "<group>"; };
+		AAADF135210878BA003D4B3B /* will_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = will_mosq.c; path = mqttLib/will_mosq.c; sourceTree = "<group>"; };
+		AAADF136210878BA003D4B3B /* send_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = send_mosq.c; path = mqttLib/send_mosq.c; sourceTree = "<group>"; };
+		AAF0574C1A918B750064CBEE /* MqttClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MqttClient.h; sourceTree = "<group>"; };
+		AAF0574D1A918B750064CBEE /* MqttClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MqttClient.m; sourceTree = "<group>"; };
+		AAF0574E1A918B750064CBEE /* mqttDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mqttDelegate.h; sourceTree = "<group>"; };
+		AAF0574F1A918B750064CBEE /* MqttMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MqttMessage.h; sourceTree = "<group>"; };
+		AAF057501A918B750064CBEE /* MqttMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MqttMessage.m; sourceTree = "<group>"; };
+		AAF057511A918B750064CBEE /* ServerBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerBrowser.h; sourceTree = "<group>"; };
+		AAF057521A918B750064CBEE /* ServerBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerBrowser.m; sourceTree = "<group>"; };
+		AAF057531A918B750064CBEE /* ServerBrowserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerBrowserDelegate.h; sourceTree = "<group>"; };
+		AAFEF8831AB9112600E67622 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = include/libcrypto.a; sourceTree = "<group>"; };
+		AAFEF8841AB9112600E67622 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = include/libssl.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA18793D1A917AA8005A6255 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAFEF8861AB9112600E67622 /* libssl.a in Frameworks */,
+				AAFEF8851AB9112600E67622 /* libcrypto.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA1879481A917AA8005A6255 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA18794C1A917AA8005A6255 /* libmosquittoLibrary.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA1879371A917AA8005A6255 = {
+			isa = PBXGroup;
+			children = (
+				AA1879421A917AA8005A6255 /* mosquittoLibrary */,
+				AA18794F1A917AA8005A6255 /* mosquittoLibraryTests */,
+				AA1879411A917AA8005A6255 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA1879411A917AA8005A6255 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA1879401A917AA8005A6255 /* libmosquittoLibrary.a */,
+				AA18794B1A917AA8005A6255 /* mosquittoLibraryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA1879421A917AA8005A6255 /* mosquittoLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				AAFEF8821AB9110D00E67622 /* openssl */,
+				AAF0574A1A918B750064CBEE /* mqttService */,
+				AA18795A1A917AEB005A6255 /* config.h */,
+				AA1879E61A917B37005A6255 /* libmosquitto */,
+				AA18795C1A917AEB005A6255 /* include */,
+				AA1879431A917AA8005A6255 /* mosquittoLibrary.h */,
+				AA1879451A917AA8005A6255 /* mosquittoLibrary.m */,
+			);
+			path = mosquittoLibrary;
+			sourceTree = "<group>";
+		};
+		AA18794F1A917AA8005A6255 /* mosquittoLibraryTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA1879501A917AA8005A6255 /* Supporting Files */,
+			);
+			path = mosquittoLibraryTests;
+			sourceTree = "<group>";
+		};
+		AA1879501A917AA8005A6255 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA1879511A917AA8005A6255 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA18795C1A917AEB005A6255 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				AA1879601A917AEB005A6255 /* aes.h */,
+				AA1879611A917AEB005A6255 /* asn1.h */,
+				AA1879621A917AEB005A6255 /* asn1_mac.h */,
+				AA1879631A917AEB005A6255 /* asn1t.h */,
+				AA1879641A917AEB005A6255 /* bio.h */,
+				AA1879651A917AEB005A6255 /* blowfish.h */,
+				AA1879661A917AEB005A6255 /* bn.h */,
+				AA1879671A917AEB005A6255 /* buffer.h */,
+				AA1879681A917AEB005A6255 /* camellia.h */,
+				AA1879691A917AEB005A6255 /* cast.h */,
+				AA18796A1A917AEB005A6255 /* cmac.h */,
+				AA18796B1A917AEB005A6255 /* cms.h */,
+				AA18796C1A917AEB005A6255 /* comp.h */,
+				AA18796D1A917AEB005A6255 /* conf.h */,
+				AA18796E1A917AEB005A6255 /* conf_api.h */,
+				AA18796F1A917AEB005A6255 /* crypto.h */,
+				AA1879701A917AEB005A6255 /* des.h */,
+				AA1879711A917AEB005A6255 /* des_old.h */,
+				AA1879721A917AEB005A6255 /* dh.h */,
+				AA1879731A917AEB005A6255 /* dsa.h */,
+				AA1879741A917AEB005A6255 /* dso.h */,
+				AA1879751A917AEB005A6255 /* dtls1.h */,
+				AA1879761A917AEB005A6255 /* e_os2.h */,
+				AA1879771A917AEB005A6255 /* ebcdic.h */,
+				AA1879781A917AEB005A6255 /* ec.h */,
+				AA1879791A917AEB005A6255 /* ecdh.h */,
+				AA18797A1A917AEB005A6255 /* ecdsa.h */,
+				AA18797B1A917AEB005A6255 /* engine.h */,
+				AA18797C1A917AEB005A6255 /* err.h */,
+				AA18797D1A917AEB005A6255 /* evp.h */,
+				AA18797E1A917AEB005A6255 /* hmac.h */,
+				AA18797F1A917AEB005A6255 /* idea.h */,
+				AA1879801A917AEB005A6255 /* krb5_asn.h */,
+				AA1879811A917AEB005A6255 /* kssl.h */,
+				AA1879821A917AEB005A6255 /* lhash.h */,
+				AA1879831A917AEB005A6255 /* md4.h */,
+				AA1879841A917AEB005A6255 /* md5.h */,
+				AA1879851A917AEB005A6255 /* mdc2.h */,
+				AA1879861A917AEB005A6255 /* modes.h */,
+				AA1879871A917AEB005A6255 /* obj_mac.h */,
+				AA1879881A917AEB005A6255 /* objects.h */,
+				AA1879891A917AEB005A6255 /* ocsp.h */,
+				AA18798A1A917AEB005A6255 /* opensslconf.h */,
+				AA18798B1A917AEB005A6255 /* opensslv.h */,
+				AA18798C1A917AEB005A6255 /* ossl_typ.h */,
+				AA18798D1A917AEB005A6255 /* pem.h */,
+				AA18798E1A917AEB005A6255 /* pem2.h */,
+				AA18798F1A917AEB005A6255 /* pkcs12.h */,
+				AA1879901A917AEB005A6255 /* pkcs7.h */,
+				AA1879911A917AEB005A6255 /* pqueue.h */,
+				AA1879921A917AEB005A6255 /* rand.h */,
+				AA1879931A917AEB005A6255 /* rc2.h */,
+				AA1879941A917AEB005A6255 /* rc4.h */,
+				AA1879951A917AEB005A6255 /* ripemd.h */,
+				AA1879961A917AEB005A6255 /* rsa.h */,
+				AA1879971A917AEB005A6255 /* safestack.h */,
+				AA1879981A917AEB005A6255 /* seed.h */,
+				AA1879991A917AEB005A6255 /* sha.h */,
+				AA18799A1A917AEB005A6255 /* srp.h */,
+				AA18799B1A917AEB005A6255 /* srtp.h */,
+				AA18799C1A917AEB005A6255 /* ssl.h */,
+				AA18799D1A917AEB005A6255 /* ssl2.h */,
+				AA18799E1A917AEB005A6255 /* ssl23.h */,
+				AA18799F1A917AEB005A6255 /* ssl3.h */,
+				AA1879A01A917AEB005A6255 /* stack.h */,
+				AA1879A11A917AEB005A6255 /* symhacks.h */,
+				AA1879A21A917AEB005A6255 /* tls1.h */,
+				AA1879A31A917AEB005A6255 /* ts.h */,
+				AA1879A41A917AEB005A6255 /* txt_db.h */,
+				AA1879A51A917AEB005A6255 /* ui.h */,
+				AA1879A61A917AEB005A6255 /* ui_compat.h */,
+				AA1879A71A917AEB005A6255 /* whrlpool.h */,
+				AA1879A81A917AEB005A6255 /* x509.h */,
+				AA1879A91A917AEB005A6255 /* x509_vfy.h */,
+				AA1879AA1A917AEB005A6255 /* x509v3.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		AA1879E61A917B37005A6255 /* libmosquitto */ = {
+			isa = PBXGroup;
+			children = (
+				AAADF122210878B8003D4B3B /* actions.c */,
+				AAADF119210878B7003D4B3B /* ca.crt */,
+				AAADF107210878B5003D4B3B /* callbacks.c */,
+				AAADF0FB210878B5003D4B3B /* config.h */,
+				AAADF117210878B7003D4B3B /* connect.c */,
+				AAADF101210878B5003D4B3B /* dummypthread.h */,
+				AAADF10B210878B6003D4B3B /* handle_connack.c */,
+				AAADF103210878B5003D4B3B /* handle_ping.c */,
+				AAADF130210878B9003D4B3B /* handle_pubackcomp.c */,
+				AAADF134210878BA003D4B3B /* handle_publish.c */,
+				AAADF128210878B8003D4B3B /* handle_pubrec.c */,
+				AAADF12B210878B9003D4B3B /* handle_pubrel.c */,
+				AAADF105210878B5003D4B3B /* handle_suback.c */,
+				AAADF112210878B6003D4B3B /* handle_unsuback.c */,
+				AAADF10F210878B6003D4B3B /* helpers.c */,
+				AAADF0FC210878B5003D4B3B /* ipad.crt */,
+				AAADF12C210878B9003D4B3B /* ipad.key */,
+				AAADF121210878B8003D4B3B /* iphone.crt */,
+				AAADF11D210878B7003D4B3B /* iphone.key */,
+				AAADF12E210878B9003D4B3B /* linker.version */,
+				AAADF133210878BA003D4B3B /* logging_mosq.c */,
+				AAADF113210878B6003D4B3B /* logging_mosq.h */,
+				AAADF116210878B7003D4B3B /* loop.c */,
+				AAADF109210878B6003D4B3B /* memory_mosq.c */,
+				AAADF102210878B5003D4B3B /* memory_mosq.h */,
+				AAADF129210878B9003D4B3B /* messages_mosq.c */,
+				AAADF12D210878B9003D4B3B /* messages_mosq.h */,
+				AAADF10D210878B6003D4B3B /* mosquitto_internal.h */,
+				AAADF123210878B8003D4B3B /* mosquitto.c */,
+				AAADF12A210878B9003D4B3B /* mosquitto.h */,
+				AAADF10C210878B6003D4B3B /* mqtt3_protocol.h */,
+				AAADF126210878B8003D4B3B /* net_mosq.c */,
+				AAADF11F210878B8003D4B3B /* net_mosq.h */,
+				AAADF12F210878B9003D4B3B /* options.c */,
+				AAADF0FD210878B5003D4B3B /* packet_mosq.c */,
+				AAADF11A210878B7003D4B3B /* packet_mosq.h */,
+				AAADF125210878B8003D4B3B /* read_handle.c */,
+				AAADF10E210878B6003D4B3B /* read_handle.h */,
+				AAADF106210878B5003D4B3B /* remote.crt */,
+				AAADF104210878B5003D4B3B /* remote.key */,
+				AAADF10A210878B6003D4B3B /* send_connect.c */,
+				AAADF114210878B6003D4B3B /* send_disconnect.c */,
+				AAADF136210878BA003D4B3B /* send_mosq.c */,
+				AAADF118210878B7003D4B3B /* send_mosq.h */,
+				AAADF124210878B8003D4B3B /* send_publish.c */,
+				AAADF108210878B5003D4B3B /* send_subscribe.c */,
+				AAADF110210878B6003D4B3B /* send_unsubscribe.c */,
+				AAADF11C210878B7003D4B3B /* socks_mosq.c */,
+				AAADF127210878B8003D4B3B /* socks_mosq.h */,
+				AAADF115210878B7003D4B3B /* srv_mosq.c */,
+				AAADF131210878B9003D4B3B /* thread_mosq.c */,
+				AAADF0FE210878B5003D4B3B /* time_mosq.c */,
+				AAADF132210878B9003D4B3B /* time_mosq.h */,
+				AAADF111210878B6003D4B3B /* tls_mosq.c */,
+				AAADF0FF210878B5003D4B3B /* tls_mosq.h */,
+				AAADF11B210878B7003D4B3B /* utf8_mosq.c */,
+				AAADF100210878B5003D4B3B /* util_mosq.c */,
+				AAADF11E210878B8003D4B3B /* util_mosq.h */,
+				AAADF135210878BA003D4B3B /* will_mosq.c */,
+				AAADF120210878B8003D4B3B /* will_mosq.h */,
+			);
+			name = libmosquitto;
+			sourceTree = "<group>";
+		};
+		AAF0574A1A918B750064CBEE /* mqttService */ = {
+			isa = PBXGroup;
+			children = (
+				AAF0574C1A918B750064CBEE /* MqttClient.h */,
+				AAF0574D1A918B750064CBEE /* MqttClient.m */,
+				AAF0574E1A918B750064CBEE /* mqttDelegate.h */,
+				AAF0574F1A918B750064CBEE /* MqttMessage.h */,
+				AAF057501A918B750064CBEE /* MqttMessage.m */,
+				AAF057511A918B750064CBEE /* ServerBrowser.h */,
+				AAF057521A918B750064CBEE /* ServerBrowser.m */,
+				AAF057531A918B750064CBEE /* ServerBrowserDelegate.h */,
+				AA0841311AB66AEF00C7B883 /* MyMQTTDelegate.h */,
+				AA0841321AB66AEF00C7B883 /* MyMQTTDelegate.m */,
+			);
+			path = mqttService;
+			sourceTree = "<group>";
+		};
+		AAFEF8821AB9110D00E67622 /* openssl */ = {
+			isa = PBXGroup;
+			children = (
+				AAFEF8831AB9112600E67622 /* libcrypto.a */,
+				AAFEF8841AB9112600E67622 /* libssl.a */,
+			);
+			name = openssl;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA18793F1A917AA8005A6255 /* mosquittoLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA1879541A917AA8005A6255 /* Build configuration list for PBXNativeTarget "mosquittoLibrary" */;
+			buildPhases = (
+				AA18793C1A917AA8005A6255 /* Sources */,
+				AA18793D1A917AA8005A6255 /* Frameworks */,
+				AA18793E1A917AA8005A6255 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mosquittoLibrary;
+			productName = mosquittoLibrary;
+			productReference = AA1879401A917AA8005A6255 /* libmosquittoLibrary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AA18794A1A917AA8005A6255 /* mosquittoLibraryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA1879571A917AA8005A6255 /* Build configuration list for PBXNativeTarget "mosquittoLibraryTests" */;
+			buildPhases = (
+				AA1879471A917AA8005A6255 /* Sources */,
+				AA1879481A917AA8005A6255 /* Frameworks */,
+				AA1879491A917AA8005A6255 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA18794E1A917AA8005A6255 /* PBXTargetDependency */,
+			);
+			name = mosquittoLibraryTests;
+			productName = mosquittoLibraryTests;
+			productReference = AA18794B1A917AA8005A6255 /* mosquittoLibraryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA1879381A917AA8005A6255 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = com.pingan;
+				TargetAttributes = {
+					AA18793F1A917AA8005A6255 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					AA18794A1A917AA8005A6255 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = AA18793B1A917AA8005A6255 /* Build configuration list for PBXProject "mosquittoLibrary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AA1879371A917AA8005A6255;
+			productRefGroup = AA1879411A917AA8005A6255 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA18793F1A917AA8005A6255 /* mosquittoLibrary */,
+				AA18794A1A917AA8005A6255 /* mosquittoLibraryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA1879491A917AA8005A6255 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA18793C1A917AA8005A6255 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0841331AB66AEF00C7B883 /* MyMQTTDelegate.m in Sources */,
+				AAADF13A210878BA003D4B3B /* handle_ping.c in Sources */,
+				AAADF146210878BA003D4B3B /* srv_mosq.c in Sources */,
+				AAADF152210878BA003D4B3B /* handle_pubrel.c in Sources */,
+				AAADF158210878BA003D4B3B /* will_mosq.c in Sources */,
+				AAADF139210878BA003D4B3B /* util_mosq.c in Sources */,
+				AAADF144210878BA003D4B3B /* handle_unsuback.c in Sources */,
+				AAADF13E210878BA003D4B3B /* memory_mosq.c in Sources */,
+				AAF057561A918B750064CBEE /* ServerBrowser.m in Sources */,
+				AAADF153210878BA003D4B3B /* options.c in Sources */,
+				AAADF138210878BA003D4B3B /* time_mosq.c in Sources */,
+				AAADF140210878BA003D4B3B /* handle_connack.c in Sources */,
+				AAADF150210878BA003D4B3B /* handle_pubrec.c in Sources */,
+				AAF057551A918B750064CBEE /* MqttMessage.m in Sources */,
+				AAADF145210878BA003D4B3B /* send_disconnect.c in Sources */,
+				AAADF14E210878BA003D4B3B /* read_handle.c in Sources */,
+				AAADF13C210878BA003D4B3B /* callbacks.c in Sources */,
+				AAADF137210878BA003D4B3B /* packet_mosq.c in Sources */,
+				AAADF14B210878BA003D4B3B /* actions.c in Sources */,
+				AAADF154210878BA003D4B3B /* handle_pubackcomp.c in Sources */,
+				AAADF147210878BA003D4B3B /* loop.c in Sources */,
+				AAADF159210878BA003D4B3B /* send_mosq.c in Sources */,
+				AAADF156210878BA003D4B3B /* logging_mosq.c in Sources */,
+				AAADF14C210878BA003D4B3B /* mosquitto.c in Sources */,
+				AAADF13D210878BA003D4B3B /* send_subscribe.c in Sources */,
+				AAADF142210878BA003D4B3B /* send_unsubscribe.c in Sources */,
+				AAADF14A210878BA003D4B3B /* socks_mosq.c in Sources */,
+				AAF057541A918B750064CBEE /* MqttClient.m in Sources */,
+				AAADF13B210878BA003D4B3B /* handle_suback.c in Sources */,
+				AAADF151210878BA003D4B3B /* messages_mosq.c in Sources */,
+				AAADF149210878BA003D4B3B /* utf8_mosq.c in Sources */,
+				AAADF141210878BA003D4B3B /* helpers.c in Sources */,
+				AAADF14D210878BA003D4B3B /* send_publish.c in Sources */,
+				AAADF14F210878BA003D4B3B /* net_mosq.c in Sources */,
+				AAADF13F210878BA003D4B3B /* send_connect.c in Sources */,
+				AAADF148210878BA003D4B3B /* connect.c in Sources */,
+				AAADF155210878BA003D4B3B /* thread_mosq.c in Sources */,
+				AAADF157210878BA003D4B3B /* handle_publish.c in Sources */,
+				AA1879461A917AA8005A6255 /* mosquittoLibrary.m in Sources */,
+				AAADF143210878BA003D4B3B /* tls_mosq.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA1879471A917AA8005A6255 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA18794E1A917AA8005A6255 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA18793F1A917AA8005A6255 /* mosquittoLibrary */;
+			targetProxy = AA18794D1A917AA8005A6255 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AA1879521A917AA8005A6255 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AA1879531A917AA8005A6255 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA1879551A917AA8005A6255 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "";
+				"HEADER_SEARCH_PATHS[arch=*]" = "include/**";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/mosquittoLibrary/include",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AA1879561A917AA8005A6255 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "";
+				"HEADER_SEARCH_PATHS[arch=*]" = "include/**";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/mosquittoLibrary/include",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AA1879581A917AA8005A6255 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = mosquittoLibraryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AA1879591A917AA8005A6255 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = mosquittoLibraryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA18793B1A917AA8005A6255 /* Build configuration list for PBXProject "mosquittoLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA1879521A917AA8005A6255 /* Debug */,
+				AA1879531A917AA8005A6255 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA1879541A917AA8005A6255 /* Build configuration list for PBXNativeTarget "mosquittoLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA1879551A917AA8005A6255 /* Debug */,
+				AA1879561A917AA8005A6255 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA1879571A917AA8005A6255 /* Build configuration list for PBXNativeTarget "mosquittoLibraryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA1879581A917AA8005A6255 /* Debug */,
+				AA1879591A917AA8005A6255 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA1879381A917AA8005A6255 /* Project object */;
+}
