@@ -22,6 +22,7 @@
     NSString* caFile;
     NSString* clientFile;
     NSString* clientKeyFile;
+    NSString* clientId;
 }
 
 @property (strong,nonatomic) NSString *host;
@@ -31,13 +32,7 @@
 @property (nonatomic,assign) unsigned short keepAlive;
 @property (nonatomic,assign) BOOL cleanSession;
 @property (weak, nonatomic)id <mqttDelegate> delegate;
-
-//+ (MqttClient *) shareMosq:(NSString*)clientId;
-//+ (void)addConnections:(MqttClient*)mosq;
-//+ (NSArray*)getConnections;
-
-//+ (void) initialize;
-//+ (NSString*) version;
+@property (strong,nonatomic) NSString *clientId;
 
 - (MqttClient*) initWithClientId: (NSString *)clientId;
 - (void) setMessageRetry: (NSUInteger)seconds;

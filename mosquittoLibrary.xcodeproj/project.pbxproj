@@ -11,6 +11,13 @@
 		AA1879441A917AA8005A6255 /* mosquittoLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA1879431A917AA8005A6255 /* mosquittoLibrary.h */; };
 		AA1879461A917AA8005A6255 /* mosquittoLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1879451A917AA8005A6255 /* mosquittoLibrary.m */; };
 		AA18794C1A917AA8005A6255 /* libmosquittoLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA1879401A917AA8005A6255 /* libmosquittoLibrary.a */; };
+		AA5232EC21130D0D00071D6A /* ca.crt in Sources */ = {isa = PBXBuildFile; fileRef = AAADF119210878B7003D4B3B /* ca.crt */; };
+		AA5232ED21130D0D00071D6A /* ipad.crt in Sources */ = {isa = PBXBuildFile; fileRef = AAADF0FC210878B5003D4B3B /* ipad.crt */; };
+		AA5232EE21130D0D00071D6A /* ipad.key in Sources */ = {isa = PBXBuildFile; fileRef = AAADF12C210878B9003D4B3B /* ipad.key */; };
+		AA5232EF21130D0D00071D6A /* iphone.crt in Sources */ = {isa = PBXBuildFile; fileRef = AAADF121210878B8003D4B3B /* iphone.crt */; };
+		AA5232F021130D0D00071D6A /* iphone.key in Sources */ = {isa = PBXBuildFile; fileRef = AAADF11D210878B7003D4B3B /* iphone.key */; };
+		AA5232F121130D0D00071D6A /* remote.crt in Sources */ = {isa = PBXBuildFile; fileRef = AAADF106210878B5003D4B3B /* remote.crt */; };
+		AA5232F221130D0D00071D6A /* remote.key in Sources */ = {isa = PBXBuildFile; fileRef = AAADF104210878B5003D4B3B /* remote.key */; };
 		AAADF137210878BA003D4B3B /* packet_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = AAADF0FD210878B5003D4B3B /* packet_mosq.c */; };
 		AAADF138210878BA003D4B3B /* time_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = AAADF0FE210878B5003D4B3B /* time_mosq.c */; };
 		AAADF139210878BA003D4B3B /* util_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = AAADF100210878B5003D4B3B /* util_mosq.c */; };
@@ -564,6 +571,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA5232EC21130D0D00071D6A /* ca.crt in Sources */,
+				AA5232ED21130D0D00071D6A /* ipad.crt in Sources */,
+				AA5232EE21130D0D00071D6A /* ipad.key in Sources */,
+				AA5232EF21130D0D00071D6A /* iphone.crt in Sources */,
+				AA5232F021130D0D00071D6A /* iphone.key in Sources */,
+				AA5232F121130D0D00071D6A /* remote.crt in Sources */,
+				AA5232F221130D0D00071D6A /* remote.key in Sources */,
 				AA0841331AB66AEF00C7B883 /* MyMQTTDelegate.m in Sources */,
 				AAADF13A210878BA003D4B3B /* handle_ping.c in Sources */,
 				AAADF146210878BA003D4B3B /* srv_mosq.c in Sources */,

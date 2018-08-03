@@ -24,30 +24,6 @@
 NSString *hostString;
 #define trace_on
 
-//static MqttClient *mosq;
-//static NSMutableArray *mosqClients;
-
-//+ (MqttClient *)shareMosq:(NSString*)clientId{
-//    if (!mosq) {
-//        mosq = [[MqttClient alloc] initWithClientId:[clientId uppercaseString]];
-//    }
-//    return mosq;
-//}
-//
-//+ (void)addConnections:(MqttClient*)mosq{
-//    if(!mosqClients){
-//        mosqClients = [[NSMutableArray alloc] init];
-//    }
-//    [mosqClients addObject:mosq];
-//}
-//
-//+ (NSArray*)getConnections{
-//    if(!mosqClients){
-//        mosqClients = [[NSMutableArray alloc] init];
-//    }
-//    return mosqClients;
-//}
-
 - (NSString *)platformRawString {
     size_t size;
     sysctlbyname("hw.machine", NULL, &size, NULL, 0);
@@ -57,8 +33,6 @@ NSString *hostString;
 
     return platform;
 }
-
-
 
 - (NSString *)platformNiceString {
     NSString *platform = [self platformRawString];

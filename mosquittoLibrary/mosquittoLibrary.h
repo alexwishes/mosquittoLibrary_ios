@@ -3,7 +3,7 @@
 //  mosquittoLibrary
 //
 //  Created by GGYY on 15/2/16.
-//  Copyright (c) 2015年 com.pingan. All rights reserved.
+//  Copyright (c) 2015年 com.test. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -18,6 +18,8 @@
 }
 
 + (mosquittoLibrary *) shareMosq;
++ (void)addConnections:(MqttClient*)mosq;
++ (NSArray*)getConnections;
 
 - (void)setWill: (NSString *)payload toTopic:(NSString *)willTopic withQos:(NSUInteger)willQos retain:(BOOL)retain;
 - (void)clearWill;

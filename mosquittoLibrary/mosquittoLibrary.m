@@ -3,24 +3,54 @@
 //  mosquittoLibrary
 //
 //  Created by GGYY on 15/2/16.
-//  Copyright (c) 2015年 com.pingan. All rights reserved.
+//  Copyright (c) 2015年 com.test. All rights reserved.
 //
 
 #import "mosquittoLibrary.h"
 #import "MqttClient.h"
 #import "MyMQTTDelegate.h"
 
+#define MQTT_CUSTOM_GROUP_JID @"CustomGroupJID"
+#define MQTT_CUSTOM_GROUP_NAME @"CustomGroupNAME"
+#define MQTT_CUSTOM_GROUP_MEMBERS @"CustomGroupMEMBERS"
+
+#define MQTT_MSG_TYPE @"type"                                   
+#define MQTT_MSG_CHATTYPE @"chatType"                           
+#define MQTT_MSG_SENDER @"sender"                               
+#define MQTT_MSG_RECIEVER @"reciever"                           
+#define MQTT_MSG_DATE @"date"                                   
+#define MQTT_MSG_MSG @"msg"                                     
+
+#define ERROR_DICT_VALUE_EMPTY @"No this value"
+
 #define CHAT_TYPE_TEXT_FLG @"0"                                 
 #define CHAT_TYPE_IMG_FLG @"1"                                  
 #define CHAT_TYPE_SOUND_FLG @"2"                                
 
-#define MSG_PACK_TYPE_CHAT @"0"
+#define MSG_PACK_TYPE_CHAT @"0"                              
 
-#define TWITTERFON_FORM_BOUNDARY @"--FileUpload"
+#define MQTT_CUSTOM_GROUP_HELPER_JAR @"0_CustomGroupHandler"    
+
+#define MQTT_ADD_GROUP @"ADD_GROUP"                             
+#define MQTT_QUIT_GROUP @"QUIT_GROUP"                           
+#define MQTT_ADD_MEMBER @"ADD_MEMBER"                           
+#define MQTT_KICK_MEMBER @"KICK_MEMBER"                         
+
+#define MQTT_SERVER_ADDRESS @"10.20.13.93"
+#define MQTT_SERVER_PORT 61613
+
+#define TWITTERFON_FORM_BOUNDARY @"--PADRPFileUpload"
 #define UPLOAD_FILE_URL @"http://localhost/upload"
 #define DOWNLOAD_FILE_URL @"http://localhost"
 
+#define NOTIFICATION_COMPLETE_UPLOAD_FILE @"CompleteUploadFile"
+#define NOTIFICATION_ERROR_UPLOAD_FILE @"ErrorUploadFile"
+#define NOTIFICATION_COMPLETE_DOWNLOAD_FILE @"CompleteDownloadFile"
+#define NOTIFICATION_ERROR_DOWNLOAD_FILE @"ErrorDownloadFile"
+
 #define UPLOAD_SUCCESS @"Upload Success"
+
+
 
 @interface mosquittoLibrary()
 {
@@ -71,7 +101,9 @@ static mosquittoLibrary *mosq;
     mosq.password = pass;
     mosq.cleanSession = NO;
     mosq.port = port;
+    mosq.clientId = clientId;
     mosq.keepAlive = keepAliveTime;
+    
     [mosq connectToHost:host];
     
     [mosq setDelegate:delegate];
@@ -84,7 +116,7 @@ static mosquittoLibrary *mosq;
         NSLog(@"There's no connections for mqtt now. Please connect to mqtt server first.");
         return NO;
     }else{
-        [mqClient subscribe:topic withQos:qos];
+        [mqClient subscribe:[topic uppercaseString] withQos:qos];
         return YES;
     }
 }
@@ -107,7 +139,7 @@ static mosquittoLibrary *mosq;
         
         NSString *localTime = [self getCurrentTime];
         
-        sender = mqClient.username;
+        sender = mqClient.clientId;
         
         NSString *jsonPayload = [NSString stringWithFormat:@"{\"type\":\"%@\",\"chat\":{\"type\":\"%@\",\"from\":\"%@\",\"to\":\"%@\",\"date\":\"%@\",\"msg\":\"%@\"}}",MSG_PACK_TYPE_CHAT, strChatType,[sender uppercaseString],[reciever uppercaseString],localTime,msg];
         
@@ -218,11 +250,16 @@ static mosquittoLibrary *mosq;
 }
 
 - (NSString*)getCurrentTime{
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"YYYY-MM-dd HH:mm:ss"];
-    NSString *localTime = [formatter stringFromDate:[NSDate date]];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init] ;
+    [formatter setDateStyle:NSDateFormatterMediumStyle];
+    [formatter setTimeStyle:NSDateFormatterShortStyle];
+    [formatter setDateFormat:@"YYYY-MM-dd HH:mm:ss SSS"];
+    NSTimeZone* timeZone = [NSTimeZone timeZoneWithName:@"Asia/Shanghai"];
     
-    return localTime;
+    [formatter setTimeZone:timeZone];
+    NSDate *datenow = [NSDate date];
+    NSString *timeSp = [NSString stringWithFormat:@"%ld", (long)[datenow timeIntervalSince1970]*1000];
+    return timeSp;
 }
 
 - (NSString*)getServerAddress{
