@@ -11,7 +11,7 @@
 
 #define CHAT_TYPE_TEXT @"text"
 #define CHAT_TYPE_IMG @"image"
-#define CHAT_TYPE_SOUND @"sound"  
+#define CHAT_TYPE_SOUND @"sound"
 
 @interface mosquittoLibrary : NSObject{
 
@@ -28,6 +28,7 @@
 - (void)connectToServer:(NSString *)userName password:(NSString *)pass clientId:(NSString*)clientId delegate:(id)delegate;
 - (BOOL)subscribe:(NSString*)topic withQos:(NSUInteger)qos;
 - (void)sendMsg: (NSString *)msg toWhom:(NSString *)reciever chatType:(NSString *)chatType;
+- (NSDictionary*) parseMsg:(NSString*)msg;
 
 - (NSString*)getServerAddress;
 - (void)setServerAddress:(NSString*)address;

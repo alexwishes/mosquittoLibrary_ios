@@ -149,6 +149,12 @@ static mosquittoLibrary *mosq;
     }
 }
 
+- (NSDictionary*)parseMsg:(NSString *)msg{
+    NSData *data = [msg dataUsingEncoding:NSUTF8StringEncoding];
+    NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+    return [dict objectForKey:@"chat"];
+}
+
 - (void)setWill: (NSString *)payload toTopic:(NSString *)willTopic withQos:(NSUInteger)willQos retain:(BOOL)retain{
     
     if(mqClient == nil){
